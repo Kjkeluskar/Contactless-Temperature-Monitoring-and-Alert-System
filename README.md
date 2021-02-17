@@ -15,6 +15,7 @@ This project will enable the user to measure the temperature in a contactless ma
   <li> Piezo Buzzer </li>
   <li> 5V LED (Red and Green) </li>
   <li> 1K ohm resistors </li>  
+  <li> Ultrsonic sensor </li>  
 </ul>
 
 # Software Requirements
