@@ -13,7 +13,7 @@
 String apiKey = "9PFLMV479T8STXOC";     //  Enter your Write API key from ThingSpeak
 char auth[] = "s8gfnM7NvqnovS1CNKnfCdiOXO8Urb7o"; //Auth code sent via Email
 const char *ssid =  "Avengers";     // replace with your wifi ssid and wpa2 key
-const char *pass =  "";
+const char *pass =  "jmk123123";
 const char* server = "api.thingspeak.com";
 const char* host = "api.thingspeak.com";  //We read the data from this host                                   
   const int httpPortRead = 80;                                           
@@ -61,7 +61,7 @@ void setup()
  
 void loop() 
 {
-  if(mlx.readObjectTempC()>33){
+  if(mlx.readObjectTempC()>32){
     Blynk.notify("Alert : High Temperature Detected");
     Blynk.email("kjkeluskar1@gmail.com", "Sensor alert", "High temperature detected");
   }
